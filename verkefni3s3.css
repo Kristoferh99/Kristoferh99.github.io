@@ -1,0 +1,76 @@
+header, footer, nav, main, aside, article{
+    border: 0.5px solid black; 
+    padding: 1em;
+
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "nav nav vinstri haegri"
+    "midja midja vinstri haegri"
+    "midja midja fotur fotur"
+    "haus haus haus haus"
+    ;
+    
+    margin: 1.5em;
+}
+
+.header{
+    grid-area: haus;
+    text-align: center;
+    padding: 0.5em;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 280%;
+    color: goldenrod;
+    
+}
+.nav{
+    grid-area: nav;
+    text-align: center;
+    border: 1px solid ;
+    padding: 10px 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+
+;
+
+    
+       
+}
+.main{
+    grid-area: midja;   
+}
+.aside{
+    grid-area: vinstri;   
+}
+.article{
+    grid-area: haegri;   
+}
+.footer{
+    grid-area: fotur;
+    text-align: center;
+    border: 1px solid ;
+    padding: 10px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;  
+}
+
+.midjukassi{
+    border: 1px solid;
+    display: inline-block;
+    padding: 0.25em;
+    margin: 1em;
+    text-align: center;
+}
+
+h1{
+    font-size: 110%;
+}
+h2{
+    font-size: 80%;
+}
+h3{
+    font-size: 30%;
+    font-style: normal;
+}
