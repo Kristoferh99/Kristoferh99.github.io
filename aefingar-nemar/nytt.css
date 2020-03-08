@@ -1,0 +1,142 @@
+header, footer, nav, main .topnav, .midja, .fotur, .vinstri, .haegri, aside, article{
+    border: 0.5px solid black;
+    padding: 1em;
+}
+
+/* ====== GRID Area ====== */
+
+
+/* ====== GRID Template Areas ===== */
+
+
+/* ====== Base CSS ====== */
+
+
+
+.topnav {
+ grid-area: meun;
+ background: #1c2d1c; 
+}
+.header {
+  grid-area: haus;
+  background: tomato; 
+  
+}
+.footer {
+  grid-area: fotur;
+  background: lightgreen; 
+}
+.midja {
+  grid-area: mid;
+  background: skyblue; 
+}
+.vinstri {
+  grid-area: vinstri;
+  background: gold; 
+}
+.haegri {
+  grid-area: haegri;
+  background: pink; 
+}
+.header h1 {
+    color: #fff;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.midja h2 {
+    margin: .7em 0 .8em 0;
+}
+
+.midja h4 {
+    text-align: justify;
+    margin: .4em 0;
+ }
+
+.midja p {
+    text-align: justify;
+}
+.topnav ul{
+    background: #1c2d1c; 
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.topmenu {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+.topmenu li {
+    border: 0;
+    border-left: 1px solid lime;
+    border-right: 1px solid lime; 
+    padding: 0;
+    margin:0;
+}
+.topmenu a {
+    display: block;     /* ath! */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: .4em 1em; 
+}
+.topmenu a:hover,
+.topmenu a:active,
+.virkur {
+
+
+    color: black !important;
+    background-color: lime;
+    }
+
+@media screen and (min-width: 720px)
+    {
+        body {
+            display: grid;
+              grid-template-areas:
+              "meun meun"
+              "haus haus"
+              "mid mid"
+              "vinstri vinstri"     
+              "haegri haegri"
+              "fotur fotur";
+              
+             } 
+         .myndir{
+            
+                
+         }
+             
+    }
+
+@media screen and (min-width: 960px)
+    {
+    body {
+        display: grid;
+          grid-template-areas:
+          "meun meun meun meun"  
+          "haus haus haus haus"
+          "vinstri mid mid haegri"
+          
+          "fotur fotur fotur fotur";
+        }
+
+    
+    }
+/*
+.imgR1{
+    float;
+    padding: 20px;
+    margin:50%;
+}
+
+
+
+h1{
+    background: blue;
+    border: 2px solid black;
+    text-align: center;
+}
+*/
