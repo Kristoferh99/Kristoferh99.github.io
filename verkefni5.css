@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0em;
+    margin: 0px;
+    display: grid;
+    grid-template-areas: 
+    "haus haus"
+    "haegri haegri "
+    "1midja 2vinstri"
+    "1hagri 2atext"
+    "1btext 2ctext"
+    "fotur fotur ";
+    background-image: url("golfbackround.jpg");
+    background-repeat: repeat;
+    background-size: 120%;
+
+}
+
+.middle,.vinstri,.haegri,.alnaemi,.jolin,.god{
+    margin: 1em;
+}
+
+.haus{
+    grid-area: haus;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border: 2px solid #349edb;
+    background: #349edb;
+    padding-bottom: 2em;
+    font-family: "quicksand", sans-serif;
+    
+}
+
+
+
+
+
+
+
+.btn1,.btn2{
+    border: 1px solid #349edb;
+    background: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "quicksand", sans-serif;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #349edb;
+}
+
+
+    
+
+
+.btn1:hover,.btn2:hover{
+    color: #fff;
+    background: #349edb;
+    
+    
+
+}
+
+.btn1::before,.btn2::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #349edb;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: #349edb;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: #fff
+}
+  
+a:active {
+    text-decoration: none;
+}
+
+
+.menuclass{
+    grid-area: haegri;
+    padding: 3em;
+    text-align: center;
+    border: 2px solid black;
+    justify-content: space-between;
+    
+}
+
+
+
+.middle{
+    grid-area: 1midja;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+.vinstri{
+    grid-area: 2vinstri;
+    padding: 2em;
+    border: 2px solid black;
+    background: grey;
+    opacity: 70%;
+}
+
+
+
+
+.haegri{
+    grid-area: 1hagri;
+    padding: 2em;
+    border: 2px solid black;
+    
+}
+
+.alnaemi{
+    grid-area: 2atext;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+
+
+
+
+
+.jolin{
+    grid-area: 1btext;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+.god{
+    grid-area: 2ctext;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+
+
+
+.fotur{
+    grid-area: fotur;
+    padding: 2em;
+    border: 2px solid black;
+}
+
+.menuclass{
+    padding-bottom: 1em;
+    border: 2px solid #349edb;
+    background: rgb(75, 202, 49);
+    padding-bottom: 2em;
+    font-family: "quicksand", sans-serif;
+    opacity: 80%
+
+}
+
+nav{
+    width: 100%;
+
+}
+
+.innermenu{
+    margin: 0;
+    padding: 0;
+}
+
+.menuclass,.textitakkar{
+
+}
+
+.menuclass,.textitakkar,.innermenu, a{
+
+}
+
+
